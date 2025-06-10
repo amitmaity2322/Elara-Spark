@@ -1,0 +1,396 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "product_name": "The Kezia Band Ring",
+        "mrp_price": "120.00",
+        "discount_price": "75.00",
+        "image_url": "/images/product-1.png",
+        "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"53 reviews",
+        "Vendor":"Gold Ring",
+        "product_desc": "The Kezia Band Ring is a sleek, contemporary piece crafted with elegance and simplicity. Its polished finish and timeless design make it perfect for daily wear or special occasions.",
+        "product_desc1": "Elevate your everyday elegance with The Kezia Band Ring, a timeless symbol of sophistication. Crafted with precision, this ring features a sleek, polished band that embodies modern minimalism with a touch of luxury. Its clean lines and versatile design make it a perfect match for both casual and formal wear, whether worn solo or stacked with other rings. Made for those who appreciate subtle refinement, The Kezia Band Ring is a graceful addition to any jewellery collection.",
+        "styling_tips": "The Kezia Band Ring is a versatile piece that complements both casual and formal outfits. Wear it alone for a clean, minimal look or stack it with other rings to create a modern layered effect. It pairs beautifully with neutral tones, mixed-metal accessories, or bold statement pieces. Whether you're heading to the office or a night out, this ring adds a refined touch to any ensemble with effortless elegance.",
+        "key_features": [
+        "Sleek and minimal for versatile styling",
+        "Expertly crafted for lasting durability",
+        "High-shine surface for a refined look",
+        "Perfect for mixing with other rings",
+        "Smooth inner band for all-day wear"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-1.png" },
+          { "id": 2, "url": "/images/product-1-1.png" },
+          { "id": 3, "url": "/images/product-1-2.png" },
+          { "id": 4, "url": "/images/product-1-3.png" },
+          { "id": 5, "url": "/images/product-1-4.png" }
+        ],
+        "handle":"kezia-band-ring"
+      },
+          {
+            "id":2,
+            "product_name": "Elation Gold Women Bracelet",
+            "mrp_price": "110.00",
+            "discount_price": "190.00",
+            "image_url": "/images/product-2.png",
+            "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"45 reviews",
+        "Vendor":"Gold Bracelet",
+        "product_desc": "The Elation Gold Women Bracelet blends elegance and simplicity in a radiant gold finish. Its lightweight, refined design makes it perfect for everyday wear or special occasions, adding a timeless touch of sophistication to any ensemble.",
+        "product_desc1": "The Elation Gold Women Bracelet is a graceful expression of elegance and refinement. Featuring a sleek, minimalist design in luminous gold, it wraps around the wrist with effortless beauty. Ideal for both casual and formal settings, this bracelet transitions seamlessly from day to night. Comfortable to wear and visually striking, it’s the perfect addition to your jewellery collection—designed to enhance your style with a subtle touch of luxury.",
+        "styling_tips": "The Elation Gold Women Bracelet is a versatile accessory that effortlessly complements any look. For a chic, everyday style, wear it solo with a crisp shirt or casual dress to let its minimalist elegance shine. To elevate your evening outfits, stack it with other slim gold bangles or pair it with a classic watch. This bracelet also pairs beautifully with gold-toned earrings or a delicate necklace for a cohesive and polished ensemble. Whether you're dressing up for a special occasion or keeping it simple for the day, this bracelet adds a refined touch to your style.",
+        "key_features": [
+        "Lightweight and comfortable for all-day wear",
+        "Perfect for both casual and formal looks",
+        "Adjustable fit for different wrist sizes",
+        "Ideal for gifting or personal styling"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-2.png" },
+          { "id": 2, "url": "/images/product-2-1.png" },
+          { "id": 3, "url": "/images/product-2-2.png" },
+          { "id": 4, "url": "/images/product-2-3.png" },
+          { "id": 5, "url": "/images/product-2-4.png" }
+        ],
+            "handle":"elation-gold-women-bracelet"
+          },
+          {
+            "id":3,
+            "product_name": "Floral Essence Diamond Pendant",
+            "mrp_price": "89.00",
+            "discount_price":"190.00",
+            "image_url": "/images/product-3.png",
+            "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"66 reviews",
+        "Vendor":"Diamond Pendant",
+        "product_desc": "The Floral Essence Diamond Pendant captures the delicate beauty of blooming flowers with sparkling diamond accents. Crafted for elegance and grace, it’s the perfect piece to add a subtle yet stunning charm to both everyday looks and special occasions.",
+        "product_desc1": "Inspired by nature’s elegance, the Floral Essence Diamond Pendant features a graceful floral design adorned with dazzling diamonds. Its intricate detailing and radiant sparkle make it a timeless addition to your jewellery collection. Ideal for both daily elegance and celebratory moments, this pendant adds effortless charm to any outfit.",
+        "styling_tips": "The Floral Essence Diamond Pendant is a delicate yet striking piece that complements both casual and elegant looks. Pair it with a simple V-neck blouse or a solid-colored dress to let its floral design stand out. For a coordinated look, match it with floral-inspired diamond studs or a slim bracelet. It’s perfect for adding a touch of sparkle to your daytime outfits and transitions beautifully into evening wear. Whether you're attending a brunch or a formal dinner, this pendant adds a graceful, feminine charm to your ensemble.",
+        "key_features": [
+        "Elegant floral design inspired by nature",
+        "Sparkling genuine diamond accents",
+        "Crafted with high-quality metal for durability",
+        "Lightweight and comfortable for everyday wear",
+        "Adds a subtle yet striking sparkle to any outfit"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-3.png" },
+          { "id": 2, "url": "/images/product-3-1.png" },
+          { "id": 3, "url": "/images/product-3-2.png" },
+          { "id": 4, "url": "/images/product-3-3.png" },
+          { "id": 5, "url": "/images/product-3-4.png" }
+        ],
+            "handle":"eloral-essence-diamond-pendant"
+          },
+          {
+            "id":4,
+            "product_name": "Glazing Diamond Stud Earrings",
+            "mrp_price": "80.00",
+            "discount_price": 0.0,
+            "image_url": "/images/product-4.png",
+            "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"59 reviews",
+        "Vendor":"Diamond Earrings",
+        "product_desc": "Glazing Diamond Stud Earrings shine with brilliant clarity and timeless elegance. Crafted to capture and reflect light beautifully, these classic studs add a sparkling finishing touch to any outfit—perfect for everyday wear or special occasions.",
+        "product_desc1": "The Glazing Diamond Stud Earrings feature expertly cut diamonds set to maximize sparkle and brilliance. Their simple yet sophisticated design makes them a versatile accessory that complements both casual and formal styles. Lightweight and comfortable, these studs are a timeless addition to any jewellery collection.",
+        "styling_tips": "The Glazing Diamond Stud Earrings add effortless elegance to any outfit. Wear them with a sleek bun or ponytail to highlight their sparkle. Perfect for everyday chic or evening glamour, they pair beautifully with both casual wear and formal attire, offering timeless versatility for any occasion.",
+        "key_features": [
+        "Brilliant-cut diamonds for maximum sparkle",
+        "Timeless stud design suitable for all occasions",
+        "Lightweight and comfortable for daily wear",
+        "Crafted with high-quality, durable materials"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-4.png" },
+          { "id": 2, "url": "/images/product-4-1.png" },
+          { "id": 3, "url": "/images/product-4-2.png" },
+          { "id": 4, "url": "/images/product-4-3.png" },
+          { "id": 5, "url": "/images/product-4-4.png" }
+        ],
+            "handle":"glazing-diamond-stud-earrings"
+          },
+          {
+            "id":5,
+            "product_name": "Nancy Glow Diamond Pendant",
+            "mrp_price": "170.00",
+            "discount_price": "190.00",
+            "image_url": "/images/product-5.png",
+            "quantity": 1,             
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"53 reviews",
+        "Vendor":"Diamond Pendant",
+        "product_desc": "The Nancy Glow Diamond Pendant exudes subtle sophistication with its radiant diamond centerpiece. Crafted for elegance and everyday charm, it adds a graceful glow to any outfit—perfect for both casual days and special moments.",
+        "product_desc1": "The Nancy Glow Diamond Pendant is a delicate expression of elegance and timeless beauty. Featuring a radiant diamond set in a sleek, refined design, it adds just the right touch of sparkle to any look. Perfect for daily wear or special occasions, this pendant complements both modern and classic styles. Lightweight and versatile, it’s a graceful addition to any jewellery collection, designed to shine with subtle sophistication.",
+        "styling_tips": "The Nancy Glow Diamond Pendant pairs effortlessly with both casual and formal outfits. Wear it with a deep neckline or layered with delicate chains for a trendy look. Ideal for everyday elegance or evening charm, it complements stud earrings and sleek hairstyles to highlight its refined sparkle.",
+        "key_features": [
+        "Secure clasp for easy and safe wearing",
+        "Polished finish adds refined shine",
+        "Complements layered jewellery styles",
+        "Perfect for gifting or personal elegance"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-5.png" },
+          { "id": 2, "url": "/images/product-5-1.png" },
+          { "id": 3, "url": "/images/product-5-2.png" },
+          { "id": 4, "url": "/images/product-5-3.png" },
+          { "id": 5, "url": "/images/product-5-4.png" }
+        ],
+            "handle":"nancy-glow-diamond-pendant"
+          },
+          {
+            "id":6,
+            "product_name": "Sparkle Stitch Diamond Bracelet",
+            "mrp_price": "109.00",
+            "discount_price": 0.0,
+            "image_url": "/images/product-6.png",
+            "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"52 reviews",
+        "Vendor":"Diamond Bracelet",
+        "product_desc": "The Sparkle Stitch Diamond Bracelet features a stunning arrangement of diamonds in a refined stitched design. Elegant yet modern, it’s perfect for daily elegance or evening glamour—adding a radiant touch of sparkle to your wrist with effortless sophistication.",
+        "product_desc1": "The Sparkle Stitch Diamond Bracelet is a refined blend of craftsmanship and style. Featuring a unique stitched design adorned with brilliant-cut diamonds, it delivers both elegance and sparkle in every movement. Whether paired with casual outfits or evening attire, this bracelet brings a luxurious finish to your look. Comfortable for all-day wear, it’s a versatile piece that’s as radiant as it is timeless—a true essential in any jewellery lover’s collection.",
+        "styling_tips": "The Sparkle Stitch Diamond Bracelet adds a refined shimmer to any look. Wear it solo with a sleek blouse or stacked with other delicate bangles for a layered, trendy style. Perfect for formal evenings or polished office wear, it pairs beautifully with diamond studs or a matching pendant to complete an elegant ensemble.",
+        "key_features": [
+        "Unique stitched design with brilliant-cut diamonds",
+        "Elegant blend of modern style and timeless charm",
+        "Lightweight and comfortable for extended wear",
+        "Secure clasp for a reliable fit",
+        "Perfect as a gift or personal statement piece"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-6.png" },
+          { "id": 2, "url": "/images/product-6-1.png" },
+          { "id": 3, "url": "/images/product-6-2.png" },
+          { "id": 4, "url": "/images/product-6-3.png" },
+          { "id": 5, "url": "/images/product-6-4.png" }
+        ],
+            "handle":"sparkle-stitch-diamond-bracelet"
+          },
+          {
+            "id":7,
+            "product_name": "Tyra Heart Diamond Ring",
+            "mrp_price": "89.00",
+            "discount_price": 0.0,
+            "image_url": "/images/product-7.png",
+            "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"46 reviews",
+        "Vendor":"Diamond Ring",
+        "product_desc": "The Tyra Heart Diamond Ring features a romantic heart-shaped design adorned with a brilliant diamond. Elegant and expressive, it’s the perfect symbol of love—ideal for daily wear, special occasions, or as a heartfelt gift that sparkles with meaning.",
+        "product_desc1": "Delicately crafted, the Tyra Heart Diamond Ring showcases a radiant heart-shaped motif accented with a shimmering diamond. Its graceful design blends romance with elegance, making it perfect for both everyday wear and cherished moments. A timeless piece, it’s ideal for gifting or celebrating love in all its forms.",
+        "styling_tips": "The Tyra Heart Diamond Ring is a delicate and romantic piece that complements both casual and formal looks. Wear it alone for a subtle statement or stack it with slim bands for a trendy layered effect. It pairs beautifully with soft pastel outfits and elegant eveningwear, making it perfect for daily wear or special occasions where you want to showcase a touch of love and sparkle.",
+        "key_features": [
+        "Romantic heart-shaped design",
+        "Centered with a brilliant, sparkling diamond",
+        "Elegant and delicate craftsmanship",
+        "Symbolizes love and affection beautifully"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-7.png" },
+          { "id": 2, "url": "/images/product-7-1.png" },
+          { "id": 3, "url": "/images/product-7-2.png" },
+          { "id": 4, "url": "/images/product-7-3.png" }
+          
+        ],
+            "handle":"tyra-heart-diamond-ring"
+          },
+          {
+            "id":8,
+            "product_name": "Gold Drop Earrings",
+            "mrp_price": "99.00",
+            "discount_price": 0.0,
+            "image_url": "/images/product-8.png",
+            "quantity": 1,             
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"42 reviews",
+        "Vendor":"Gold Earrings",
+        "product_desc": "These Gold Drop Earrings feature a classic design with elegant curves that catch the light beautifully. Lightweight and versatile, they add a touch of sophistication to both casual and formal looks—perfect for daily wear or special occasions.",
+        "product_desc1": "Crafted with smooth, flowing lines, these Gold Drop Earrings offer timeless elegance and subtle movement. Their polished finish enhances any outfit, from everyday styles to evening wear. Comfortable and lightweight, these earrings are a versatile accessory that brings warmth and refinement to your jewellery collection.",
+        "styling_tips": "Gold Drop Earrings effortlessly elevate any look with their graceful movement and warm shine. Pair them with a sleek updo or loose waves to highlight their elegance. Perfect for both office wear and evening events, they complement minimalist outfits as well as bold, patterned ensembles for a chic, polished finish.",
+        "key_features": [
+        "Classic drop design with elegant curves",
+        "Polished gold finish for a warm, luxurious shine",
+        "Lightweight and comfortable for all-day wear",
+        "Perfect gift for any special moment",
+        "Complements a variety of hairstyles and outfits"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-8.png" },
+          { "id": 2, "url": "/images/product-8-1.png" },
+          { "id": 3, "url": "/images/product-8-2.png" },
+          { "id": 4, "url": "/images/product-8-3.png" },
+          { "id": 5, "url": "/images/product-8-4.png" }
+        ],
+            "handle":"gold-drop-earrings"
+          }
+    ],
+
+"featured_products": [
+  {   
+  "id":9,
+  "product_name": "Lillian Diamond Stud Earrings",
+  "mrp_price": "90.00",
+  "discount_price": "120.00",
+  "image_url": "/images/product-9.png",
+  "quantity": 1,
+  "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"31 reviews",
+        "Vendor":"Diamond Earrings",
+        "product_desc": "The Lillian Diamond Stud Earrings sparkle with timeless brilliance. Crafted with precision-cut diamonds set in a classic stud design, they add subtle elegance and refined sparkle to any outfit—ideal for everyday wear or special occasions.",
+        "product_desc1": "Featuring expertly cut diamonds in a sleek, classic stud setting, the Lillian Diamond Stud Earrings offer effortless sophistication. Their timeless design makes them a versatile accessory that enhances both casual and formal styles. Lightweight and comfortable, these earrings are a must-have addition to any jewellery collection.",
+        "styling_tips": "The Lillian Diamond Stud Earrings are a versatile classic that pairs beautifully with any look. Wear them daily to add a touch of sparkle to casual outfits, or style them with an elegant updo and a sleek dress for formal occasions. They also complement layered necklaces and delicate bracelets for a polished, sophisticated ensemble.",
+        "key_features": [
+        "Brilliant, precision-cut diamonds for maximum sparkle",
+        "Classic stud design suits all occasions",
+        "Crafted with durable, high-quality materials"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-9.png" },
+          { "id": 2, "url": "/images/product-9-1.png" },
+          { "id": 3, "url": "/images/product-9-2.png" },
+          { "id": 4, "url": "/images/product-9-3.png" },
+          { "id": 5, "url": "/images/product-9-4.png" }
+        ],
+  "handle":"lillian-diamond-stud-earrings"
+},
+{
+  "id":10,
+  "product_name": "Glinting Leaves Diamond Ring",
+  "mrp_price": "70.00",
+  "discount_price": "190.00",
+  "image_url": "/images/product-10.png",
+  "quantity": 1,             
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"25 reviews",
+        "Vendor":"Diamond Ring",
+        "product_desc": "The Glinting Leaves Diamond Ring showcases a nature-inspired design with delicate leaf motifs adorned by sparkling diamonds. Elegant and unique, it adds a graceful touch of shimmer—perfect for daily wear or special occasions.",
+        "product_desc1": "The Glinting Leaves Diamond Ring beautifully captures the essence of nature with its detailed leaf motifs accented by shimmering diamonds. Crafted with precision and elegance, this ring offers a unique blend of organic charm and refined sparkle. Whether worn as a daily accessory or reserved for special occasions, it adds a graceful, luminous touch to your style. A perfect gift for nature lovers and jewellery enthusiasts alike.",
+        "styling_tips": "The Glinting Leaves Diamond Ring adds a touch of natural elegance to any outfit. Wear it alone to let its intricate leaf design shine or stack it with slim bands for a trendy, layered look. It pairs beautifully with earth-toned or pastel outfits and complements both casual daytime styles and sophisticated evening wear.",
+        "key_features": [
+        "Nature-inspired leaf motif design",
+        "Accented with brilliant, sparkling diamonds",
+        "Comfortable fit for everyday wear",
+        "Perfect gift for nature lovers and special moments"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-10.png" },
+          { "id": 2, "url": "/images/product-10-1.png" },
+          { "id": 3, "url": "/images/product-10-2.png" },
+          { "id": 4, "url": "/images/product-10-3.png" },
+          { "id": 5, "url": "/images/product-10-4.png" }
+        ],
+  "handle":"glinting-leaves-diamond-ring"
+},
+{
+  "id":11,
+  "product_name": "Xena Diamond Pendant With Chain",
+  "mrp_price": "150.00",
+  "discount_price":"190.00",
+  "image_url": "/images/product-11.png",
+  "quantity": 1,             
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"30 reviews",
+        "Vendor":"Diamond Chain",
+        "product_desc": "The Xena Diamond Pendant with Chain features a sleek, modern design centered around a sparkling diamond. Perfectly crafted for everyday elegance, it adds a subtle yet striking shimmer to any outfit—ideal for both casual wear and special occasions.",
+        "product_desc1": "With a contemporary design, the Xena Diamond Pendant with Chain showcases a radiant diamond set in a polished frame. Lightweight and versatile, this pendant effortlessly enhances both casual and formal looks. Its timeless appeal makes it a must-have accessory for adding refined sparkle to your jewellery collection.",
+        "styling_tips": "The Xena Diamond Pendant with Chain adds a sleek, modern sparkle to any outfit. Wear it alone for a minimalist look or layer it with other delicate necklaces for a trendy, personalized style. Perfect for both casual days and elegant evenings, it pairs well with simple tops and chic dresses alike.",
+        "key_features": [
+        "Lightweight and comfortable for daily use",
+        "Crafted from high-quality materials for lasting shine",
+        "Secure clasp ensures reliable fastening",
+        "Adds subtle yet striking sparkle to any outfit"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-11.png" },
+          { "id": 2, "url": "/images/product-11-1.png" },
+          { "id": 3, "url": "/images/product-11-2.png" }
+          
+          
+        ],
+  "handle":"xena-diamond-pendant-chain"
+},
+{
+  "id":12,
+  "product_name": "The Strut Heart Pendant",
+  "mrp_price": "170.00",
+  "discount_price": 0.0,
+  "image_url": "/images/product-12.png",
+  "quantity": 1,              
+        "is_featured": "0",        
+        "dealoftheday": "0",         
+        "is_sale":"0",             
+        "currency": "$",
+        "addedby": "100",
+        "review":"20 reviews",
+        "Vendor":"Diamond Chain",
+        "product_desc": "The Strut Heart Pendant is a bold and elegant accessory featuring a sleek heart design. Its polished finish adds a radiant shine, making it perfect for everyday wear or special occasions to showcase your confident style.",
+        "product_desc1": "With a modern, streamlined heart shape, The Strut Heart Pendant combines elegance and edge. Crafted with a polished finish, this pendant offers a striking sparkle that complements any outfit. Whether worn alone or layered, it’s a versatile piece perfect for expressing your bold, confident personality.",
+        "styling_tips": "The Strut Heart Pendant is perfect for adding a touch of modern elegance to any outfit. Wear it solo with a simple blouse or layer it with other delicate chains for a chic, trendy look. Ideal for both casual days and evening outings, it complements minimalist and bold styles alike.",
+        "key_features": [
+        "Sleek, modern heart-shaped design",
+        "Polished finish for a radiant shine",
+        "Lightweight and comfortable for daily wear",
+        "Crafted from high-quality, durable materials",
+        "Perfect for layering or standalone statement"
+      ],
+        "imageArray": [
+          { "id": 1, "url": "/images/product-12.png" },
+          { "id": 2, "url": "/images/product-12-1.png" },
+          { "id": 3, "url": "/images/product-12-2.png" },
+          { "id": 4, "url": "/images/product-12-3.png" }
+         
+        ],
+  "handle":"order-women-pendant"
+}
+]
+
+  }
