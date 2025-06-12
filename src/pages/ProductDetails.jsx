@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import productImg from '../assets/ring-1.svg';
 import star from '../assets/star.svg';
-import { useNavigate, useParams } from 'react-router-dom';
+import { parsePath, useNavigate, useParams } from 'react-router-dom';
 import productData from '../../db.json';
 import { CartContext } from './context/CartProvider';
 
@@ -21,11 +21,17 @@ function ProductDetails({product}) {
  const { dispatch } = useContext(CartContext);
 
  const [quantity, setQuantity] = useState(1);
+ const [selectedCarat, setselectedCarat] =useState('18KT');
+
+ const caratprice = {
+  '18KT' : singleproduct.mrp_price,
+  '22KT' : (parseFloat(singleproduct.mrp_price) + 10).toFixed(2),
+ }
  
  const handleAddToCart = () => {
   dispatch({
     type: 'Add',
-    payload: { ...singleproduct, quantity },
+    payload: { ...singleproduct, quantity, mrp_price: caratprice[selectedCarat], selectedCarat: selectedCarat  },
   });
 };
 
@@ -34,7 +40,7 @@ const navigate = useNavigate();
 const handleBuyitNow = () => {
   dispatch({
     type: 'Add',
-    payload: { ...singleproduct, quantity },
+    payload: { ...singleproduct, quantity, mrp_price: caratprice[selectedCarat], selectedCarat: selectedCarat },
   });
 
   setTimeout(()=>{
@@ -80,14 +86,19 @@ const handleBuyitNow = () => {
                                     
                         ({singleproduct.review})</div>
                 </div>
-                <div className='font-size22 color-main font-weight600 py-3'>${singleproduct.mrp_price}</div>
+                <div className='font-size22 color-main font-weight600 py-3'>${caratprice[selectedCarat]}</div>
                 <div className='productD-text font-size14 font-weight300'>{singleproduct.product_desc}</div>
                 <div className='avail font-size14 font-weight500 py-3'>Availability: <span className='font-weight300'>200 in stock</span></div>
                 <div className='carat'>
                    <h5 className='font-size14 font-weight500 pb-2'>Carat: </h5>
                    <div className='d-flex'>
-                     <button className='font-size12 font-weight400 carat-active'>18KT</button>
-                     <button className='font-size12 font-weight400'>22KT</button>
+                    {['18KT', '22KT'].map((carat)=>(
+                      <button key={carat} className={`font-size12 font-weight400 ${selectedCarat === carat ? 'carat-active' : ''}`} onClick={()=> setselectedCarat(carat)}>
+                        {carat}
+                      </button>
+                     
+                    ))}
+                     
                    </div>
                 </div>
                 <div className='quantity mt-4'>

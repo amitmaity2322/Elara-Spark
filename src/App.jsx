@@ -9,6 +9,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Thankyou from "./pages/Thankyou";
+import Wishlist from "./pages/wishlist";
 
 
 function Layout() {
@@ -27,6 +28,7 @@ function Layout() {
         <Route path="/Cart" element={<Cart />} /> 
         <Route path="/Checkout" element={<Checkout />} /> 
         <Route path="/Thankyou" element={<Thankyou />} /> 
+        <Route path="/Wishlist" element={<Wishlist/>} /> 
         
       </Routes>
     

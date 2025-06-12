@@ -2,23 +2,25 @@ import React, {useContext, useState} from 'react';
 import logo from '../assets/logo.svg';
 import cart1 from '../assets/cart.svg';
 import user from '../assets/user.svg';
-import wishlist from '../assets/wishlist.svg';
+import wishlist1 from '../assets/wishlist.svg';
 import search from '../assets/search.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { CartContext } from './context/CartProvider';
 import { Link } from 'react-router-dom';
+import { WishlistContext } from './context/WishlistProvider';
 
 const Navbar = () => {
   const [mobileNav, setmobileNav] = useState(false);
 
   const toggleMenu = () =>{
     setmobileNav(!mobileNav);
-    console.log('Menu open')
+    //console.log('Menu open')
   }
 
   const {cart} =useContext(CartContext);
-  //console.log(cart)
+  const {wishlist} =useContext(WishlistContext);
+  console.log(wishlist)
   return (
     <div>
         <div className='top_bar py-2'>
@@ -67,7 +69,13 @@ const Navbar = () => {
         {/* 3 DIVS RIGHT - Icons (grouped logically) */}
         <div className="d-flex align-items-center gap-3">
           <div><img src={search} alt="search" /></div>
-          <div><img src={wishlist} alt="wishlist" /></div>
+          <div className='position-relative top-cart cursor-pointer'>
+            <Link to="/Wishlist">
+            <img src={wishlist1} alt="wishlist"  />
+            {wishlist.length > 0 && (
+              <span className=" position-absolute rounded-circle">{wishlist.length}</span>
+             )}
+          </Link></div>
           <div><img src={user} alt="user" /></div>
           <div className='position-relative top-cart'><Link to="/cart" onClick={toggleMenu}><img src={cart1} alt="cart" /></Link><span className=' position-absolute rounded-circle'>{cart.length}</span></div>
          

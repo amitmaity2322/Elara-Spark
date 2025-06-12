@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import productImg from '../assets/ring-1.svg';
 import remove from '../assets/remove.svg';
 import { CartContext } from './context/CartProvider';
 
@@ -13,7 +12,8 @@ function CartProduct({product}) {
                   <div className='cart-img me-3'><img src={product.image_url} alt="productImg" /></div>
                   <div>
                     <p>{product.product_name}</p>
-                    <p className='font-size12 font-weight500 pt-2'>Carat: <span className='font-weight300'>18KT</span></p>
+                    
+                    {/* <p className='font-size12 font-weight500 pt-2'>Carat: <span className='font-weight300'>{product.selectedCarat}</span></p> */}
                   </div>
                 </div>
                 <div>${product.mrp_price}</div>

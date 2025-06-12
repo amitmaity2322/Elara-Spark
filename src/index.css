@@ -157,6 +157,9 @@ p {
 .deskto-w-50{
     width: 50%;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 @media only screen and (max-width:767px){
     .mobile-w-100{
         width: 100%;
@@ -940,6 +943,53 @@ a.nav-link{
 .transform_90.rotate{
     transform: rotate(-90deg); 
 }
+.mark_discount {
+    background-color: var(--color-main);
+    color: #ffffff;
+    font-size: 0.625rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    left: 4%;
+    top: 3%;
+}
+
+.price-bar-container {
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  .price-bar-container input[type='range'] {
+    width: 100%;
+    appearance: none;
+    height: 6px;
+    background: #e0e0e0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+  }
+  
+  .price-bar-container input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .price-bar-container input[type='range']:nth-child(2) {
+    z-index: 2;
+  }
+
+  .shop-banner h5 a {
+    color: #222222;
+    text-decoration: none;
+}
 
 /* ------------shop------------- */
 
@@ -1275,7 +1325,7 @@ button.checkout-btn{
     align-items: center;
 }
 .check-img img {
-    width: 52px;
+    width: 46px;
     background: #fff;
     border: 1px solid #838383;
     border-radius: 2px;
@@ -1300,6 +1350,36 @@ button.checkout-btn{
   color: var(--color-main);
 }
 /* ------------Thankyou------------- */
+
+/* ------------wishlist------------- */
+.wishlist-btn{
+    padding: 10px 0;
+}
+.wishlist .product-box {
+   border: 1px solid #e9e9e9;
+}
+.wishlist .product_wishlist {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    box-shadow: 0 0px 5px #cecece;
+}
+.product_wishlist {
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .product_wishlist.wishlist-active {
+    background-color: var(--color-main)
+  }
+  
+  .product_wishlist.wishlist-active img {
+    filter: brightness(0) invert(1);
+  }
+  
+
+/* ------------wishlist------------- */
+
 @media only screen and (max-width: 1200px) {
     .item-mid p{
         font-size: var(--fontSize14);
