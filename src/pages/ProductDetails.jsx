@@ -52,6 +52,11 @@ const handleBuyitNow = () => {
 
   return (
     <>
+    <div className='shop-banner'>
+        <div className='container text-center'>
+            <h5 className='font-size16 font-weight400 pt-3'><a href='/'>Home</a> / {handle}</h5>
+        </div>
+     </div>
       <div className='prodetails-section'>
         <div className='container'>
            <div className='row'>

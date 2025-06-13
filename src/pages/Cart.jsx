@@ -28,7 +28,7 @@ function Cart() {
     <div className='shop-banner'>
         <div className='container text-center'>
             <h3 className='font-family1 font-weight500 font-size28'>Your Shopping Cart</h3>
-            <h5 className='font-size16 font-weight400 pt-3'>Home</h5>
+            <h5 className='font-size16 font-weight400 pt-3'><a href='/'>Home</a></h5>
         </div>
      </div>
       <div className='cart_box'> 
