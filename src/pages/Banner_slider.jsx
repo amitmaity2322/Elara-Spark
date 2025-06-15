@@ -57,16 +57,15 @@ const Banner_slider = ({navigate}) => {
           </div>
         </section>
 
-        <section className="section-slider home-slider">
+        <section className="section-slider section-slider2 home-slider">
           <div className="overlay">
             <div className="container h-100">
               <div className="text-white midel-div justify-content-center d-flex h-100">
                 <div className='mobile-w-100 deskto-w-50'>
                 <h2 className="subheading pb-4">
-                Elegance Everyday
+                Effortless Elegance
                   </h2>
-                  <h1 className='pb-4'>Jewellery That
-                  Speaks Your Soul</h1>
+                  <h1 className='pb-4'>Express Yourself in Every Sparkle</h1>
                   <p className='pb-4 text-white bann-par'>From everyday essentials to statement pieces, our jewellery is thoughtfully designed to celebrate your style and spirit.</p>
                   <p>
                     <button className="btn btn-primary banner-btn text-uppercase" onClick={()=> navigate('/Shop')}>

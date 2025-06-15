@@ -1,14 +1,15 @@
 import React, {useContext, useState} from 'react';
-import logo from '../assets/logo.svg';
-import cart1 from '../assets/cart.svg';
-import user from '../assets/user.svg';
-import wishlist1 from '../assets/wishlist.svg';
-import search from '../assets/search.svg';
+import logo from '/images/logo.svg';
+import cart1 from '/images/cart.svg';
+import user from '/images/user.svg';
+import wishlist1 from '/images/wishlist.svg';
+import search from '/images/search.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { CartContext } from './context/CartProvider';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { WishlistContext } from './context/WishlistProvider';
+
 
 const Navbar = () => {
   const [mobileNav, setmobileNav] = useState(false);
@@ -21,6 +22,21 @@ const Navbar = () => {
   const {cart} =useContext(CartContext);
   const {wishlist} =useContext(WishlistContext);
   console.log(wishlist)
+
+
+  const [showSearch, setShowSearch] = useState(false);
+const [searchTerm, setSearchTerm] = useState('');
+const navigate = useNavigate();
+
+const handleSearchSubmit = (e) => {
+  e.preventDefault();
+  if (searchTerm.trim()) {
+    navigate(`/shop?search=${encodeURIComponent(searchTerm)}`);
+    setShowSearch(false); // close popup
+    setSearchTerm('');
+  }
+};
+
   return (
     <div>
         <div className='top_bar py-2'>
@@ -33,10 +49,10 @@ const Navbar = () => {
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
     {/* Mobile logo only */}
-    <a className="navbar-brand d-block d-lg-none" href="/"><img src={logo} alt="logo" /></a>
+    <a className="navbar-brand" href="/"><img src={logo} alt="logo" /></a>
 
     {/* Toggler for mobile */}
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    <button className="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu}>
       <span className="navbar-toggler-icon"></span>
     </button> 
@@ -46,17 +62,17 @@ const Navbar = () => {
     <button className='close-btn' onClick={toggleMenu}>
     <FontAwesomeIcon icon={faTimes} />
           </button>
-      <div className="w-100 d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
+      <div className="d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
 
         {/* 1 DIV LEFT - Logo */}
-        <div className="navbar-left">
+        {/* <div className="navbar-left">
           <a className="navbar-brand d-none d-lg-block" href="/"><img src={logo} alt="logo" /></a>
-        </div>
+        </div> */}
 
         {/* 2 DIVS MIDDLE - Navigation split in 2 parts */}
         <div className="d-flex gap-4">
           
-          <ul className="navbar-nav mb-3 mb-lg-2 mb-lg-0">
+          <ul className="navbar-nav mb-3 mb-lg-0">
           <li className="nav-item"><a className="nav-link active" href="/">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="/shop">Shop</a></li>
             <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>
@@ -66,9 +82,17 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* 3 DIVS RIGHT - Icons (grouped logically) */}
-        <div className="d-flex align-items-center gap-3">
-          <div><img src={search} alt="search" /></div>
+        
+
+      </div>
+    </div>
+
+    {/* 3 DIVS RIGHT - Icons (grouped logically) */}
+    <div className="d-flex align-items-center gap-3">
+        <div onClick={() => setShowSearch(true)} style={{ cursor: 'pointer' }}>
+  <img src={search} alt="search" />
+</div>
+
           <div className='position-relative top-cart cursor-pointer'>
             <Link to="/Wishlist">
             <img src={wishlist1} alt="wishlist"  />
@@ -77,17 +101,31 @@ const Navbar = () => {
              )}
           </Link></div>
           <div><img src={user} alt="user" /></div>
-          <div className='position-relative top-cart'><Link to="/cart" onClick={toggleMenu}><img src={cart1} alt="cart" /></Link><span className=' position-absolute rounded-circle'>{cart.length}</span></div>
+          <div className='position-relative top-cart'><Link to="/cart" ><img src={cart1} alt="cart" /></Link><span className=' position-absolute rounded-circle'>{cart.length}</span></div>
          
         </div>
-
-      </div>
-    </div>
-
-    
   </div>
 </nav>
  
+
+{showSearch && (
+  <div className="search-popup">
+    <form onSubmit={handleSearchSubmit} className="search-popup-content">
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        autoFocus
+      />
+      <button type="submit">Search</button>
+      <button type="button" onClick={() => setShowSearch(false)}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
+    </form>
+  </div>
+)}
+
     </div>
   )
 }

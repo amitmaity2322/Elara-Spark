@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import MainProduct from './MainProduct';
-import rightarrow from '../../assets/right-arrow.svg';
+import rightarrow from '/images/right-arrow.svg';
 
-function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailability}) {
+function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailability, searchQuery}) {
      const[products, setproduct]=useState([]);
      const[featured, setfeatured]=useState([]);
      const [currentPage, setCurrentPage] = useState(1);
@@ -27,7 +27,16 @@ function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailabilit
              const allProducts = [...products, ...featured];
              
              // Filter by priceRange (if provided)
+             function escapeRegex(str) {
+              return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            }
              const filtered = allProducts.filter((p) => {
+              const escapedQuery = escapeRegex(searchQuery);
+const matchesSearch =
+  searchQuery === '' ||
+  new RegExp(`\\b${escapedQuery}\\b`, 'i').test(p.product_name) ||
+  new RegExp(`\\b${escapedQuery}\\b`, 'i').test(p.product_type);
+
               const inPriceRange =
                 Number(p.mrp_price) >= priceRange[0] &&
                 Number(p.mrp_price) <= priceRange[1];
@@ -41,7 +50,7 @@ function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailabilit
     (isInStock && selectedAvailability.includes('in-stock')) ||
     (!isInStock && selectedAvailability.includes('out-of-stock'));
             
-              return inPriceRange && inType && availabilityMatch;
+              return inPriceRange && inType && availabilityMatch && matchesSearch;
             });
             
             

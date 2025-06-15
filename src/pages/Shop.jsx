@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import list1 from '../assets/1.svg';
-import rightarrow from '../assets/right-arrow.svg';
+import list1 from '/images/1.svg';
+import rightarrow from '/images/right-arrow.svg';
 import AllProduct from './Main-Product/AllProduct';
+import { useLocation } from 'react-router-dom';
 
 
 function Shop() {
@@ -45,6 +46,11 @@ function Shop() {
     );
   };
   //console.log(handleClick)
+
+  const location = useLocation();
+const searchParams = new URLSearchParams(location.search);
+const searchQuery = searchParams.get('search')?.toLowerCase() || '';
+
   return (
     <div>
      <div className='shop-banner'>
@@ -157,7 +163,7 @@ function Shop() {
    </div>
 
    <div className=''>
-     <AllProduct columnClass="col-md-4" priceRange={priceRange} selectedTypes={selectedTypes} selectedAvailability={selectedAvailability}/>
+     <AllProduct columnClass="col-md-4" priceRange={priceRange} selectedTypes={selectedTypes} selectedAvailability={selectedAvailability} searchQuery={searchQuery}/>
    </div>
 </div>
 

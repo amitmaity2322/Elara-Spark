@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import star from '../../assets/star.svg';
-import wishlist1 from '../../assets/wishlist.svg';
-import viewicon from '../../assets/view-icon.svg';
+import star from '/images/star.svg';
+import wishlist1 from '/images/wishlist.svg';
+import viewicon from '/images/view-icon.svg';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartProvider';
 import { WishlistContext } from '../context/WishlistProvider';
@@ -12,7 +12,7 @@ function MainProduct({product, columnClass = 'col-md-3'}) {
   const productNavigate = useNavigate ();
   
   const handleClickView = () =>{
-    productNavigate(`/product/${product.handle}`);
+    productNavigate(`/product/${product.handle}`); 
   }
 
   const { dispatch } = useContext(CartContext);

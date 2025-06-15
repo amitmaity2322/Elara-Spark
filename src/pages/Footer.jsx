@@ -2,9 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'; // ✅ Correct package
 import { faLocationDot, faPhone, faEnvelope, faAngleUp} from '@fortawesome/free-solid-svg-icons';
-import location from '../assets/location.svg';
-import email from '../assets/email.svg';
-import phone from '../assets/phone.svg';
+import location from '/images/location.svg';
+import email from '/images/email.svg';
+import phone from '/images/phone.svg';
 
 
 

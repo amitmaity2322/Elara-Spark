@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import remove from '../assets/remove.svg';
+import remove from '/images/remove.svg';
 import { CartContext } from './context/CartProvider';
 
 function CartProduct({product}) {

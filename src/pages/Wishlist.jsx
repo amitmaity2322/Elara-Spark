@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { useNavigate } from 'react-router-dom';
-import star from '../assets/star.svg';
+import star from '/images/star.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import {  WishlistContext } from '../pages/context/WishlistProvider';

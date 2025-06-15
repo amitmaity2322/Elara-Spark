@@ -1,7 +1,7 @@
 import React from 'react';
-import right1x from '../assets/tick-icon1x.png';
-import right2x from '../assets/tick-icon2x.png';
-import right3x from '../assets/tick-icon3x.png';
+import right1x from '/images/tick-icon1x.png';
+import right2x from '/images/tick-icon2x.png';
+import right3x from '/images/tick-icon3x.png';
 import { useLocation } from 'react-router-dom';
 
 

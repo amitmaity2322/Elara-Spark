@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react'
-import logo from '../assets/logo.svg';
-import cartCheckout from '../assets/checkout-cart.svg';
+import logo from '/images/logo.svg';
+import cartCheckout from '/images/checkout-cart.svg';
 import { CartContext } from './context/CartProvider';
 import FormSection from './FormSection';
 

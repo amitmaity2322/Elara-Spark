@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'react-slick';
-import star from '../assets/star.svg';
+import star from '/images/star.svg';
 
 
 const testimonials =[

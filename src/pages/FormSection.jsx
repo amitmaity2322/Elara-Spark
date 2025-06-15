@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { CartContext } from './context/CartProvider';
 
 function FormSection() {
+
+const { cart } = useContext(CartContext);
+
  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -62,6 +66,12 @@ function FormSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (cart.length === 0) {
+      alert('Your cart is empty. Please add products before placing an order.');
+      return;
+    }
+
     const validationErrors = validate();
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length === 0) {
@@ -212,7 +222,7 @@ function FormSection() {
         </div>
       </div>
 
-      <button type="submit" className="btn checkout-btn w-100 mt-5 py-3">
+      <button type="submit" className="btn checkout-btn w-100 mt-5 py-3" disabled={cart.length === 0}>
         Pay Now
       </button>
     </form>

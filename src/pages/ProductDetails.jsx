@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
-import productImg from '../assets/ring-1.svg';
-import star from '../assets/star.svg';
+import star from '/images/star.svg';
 import { parsePath, useNavigate, useParams } from 'react-router-dom';
 import productData from '../../db.json';
 import { CartContext } from './context/CartProvider';
