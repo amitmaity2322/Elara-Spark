@@ -50,25 +50,25 @@ function Home() {
      <section className='ftco-section'>
         <div className='container'>
           <div className='row'>
-           <div className='col-md-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0'>
+           <div className='col-md-6 col-lg-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0 ftco-top'>
            <img src={shipping} alt="shipping" />
            <p>
            Worldwide Shipping <span className='d-block'>For all Orders Over $100</span>
            </p>
            </div>
-           <div className='col-md-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0'>
+           <div className='col-md-6 col-lg-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0 ftco-top'>
            <img src={moneyback} alt="shipping" />
            <p>
            Money Back Guarantee <span className='d-block'>Guarante With In 30 Days</span>
            </p>
            </div>
-           <div className='col-md-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0'>
+           <div className='col-md-6 col-lg-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0 ftco-top'>
            <img src={Discounts} alt="shipping" />
            <p>
            Offers And Discounts <span className='d-block'>Back Returns In 7 Days</span>
            </p>
            </div>
-           <div className='col-md-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0'>
+           <div className='col-md-6 col-lg-3 d-flex align-items-center justify-content-center item-mid pb-3 pb-md-0 ftco-top'>
            <img src={support} alt="shipping" />
            <p>
            24/7 Support Services <span className='d-block'>Contact us Anytime</span>

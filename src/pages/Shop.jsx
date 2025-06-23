@@ -8,7 +8,9 @@ import { useLocation } from 'react-router-dom';
 function Shop() {
 
   const [isOpen, setisOpen] =useState(window.innerWidth < 768);
-  const [isOpenMobile, setisOpenMobile] =useState(window.innerWidth >= 768)
+  const [isOpenMobile, setisOpenMobile] =useState(window.innerWidth >= 768);
+
+  const [FilteredCount, setFilteredCount] = useState (0);
 
  useEffect(()=>{
     const fillterClick = ()=>{
@@ -117,9 +119,9 @@ const searchQuery = searchParams.get('search')?.toLowerCase() || '';
     }
   />
 
-  <div className="d-flex justify-content-between font-size14 pt-2">
-    <span>${priceRange[0]}</span>
-    <span>${priceRange[1]}</span>
+  <div className="d-flex justify-content-between font-size14 pt-4">
+  <span>Min Price: <span>${priceRange[0]}</span></span>
+  <span>Max Price: <span>${priceRange[1]}</span></span>
   </div>
 </div>
   {/* <div className='d-flex price-in justify-content-between align-items-center'>
@@ -155,7 +157,7 @@ const searchQuery = searchParams.get('search')?.toLowerCase() || '';
 
 <div className='col-md-9'>
    <div className='shop-pro d-flex justify-content-between pt-4 pt-md-0 pb-3 pb-md-5'>
-       <p className=' font-size16 color-Blackgray'>Showing 14 results</p>
+       <p className=' font-size16 color-Blackgray'>Showing {FilteredCount} results</p>
        <div className='d-flex'>
           <div className='list1'><img src={list1} alt="List" /></div>
           {/* <div className='list2 ms-2'><img src={list2} alt="List" /></div> */}
@@ -163,7 +165,7 @@ const searchQuery = searchParams.get('search')?.toLowerCase() || '';
    </div>
 
    <div className=''>
-     <AllProduct columnClass="col-md-4" priceRange={priceRange} selectedTypes={selectedTypes} selectedAvailability={selectedAvailability} searchQuery={searchQuery}/>
+     <AllProduct columnClass="col-md-4" priceRange={priceRange} selectedTypes={selectedTypes} selectedAvailability={selectedAvailability} searchQuery={searchQuery} setFilteredCount={setFilteredCount}/>
    </div>
 </div>
 

@@ -48,11 +48,14 @@ const currency = import.meta.env.VITE_CURRENCY_SYMBOL;
   
       <div className={`${columnClass} col-6 text-center main-product`} key={product.id}>
                 <div className='product-box position-relative'>
-                {[2, 3, 5, 12].includes(product.id) && (
+                
+                {[2, 3, 5, 12].includes(Number(product.id)) && product.mark_discount && (
   <div className='position-absolute rounded-circle mark_discount'>
     {product.mark_discount}
   </div>
 )}
+
+
                 <div
           className={`position-absolute rounded-circle product_wishlist cursor-pointer ${
             isInWishlist ? 'wishlist-active' : ''
@@ -80,7 +83,7 @@ const currency = import.meta.env.VITE_CURRENCY_SYMBOL;
                 </div>
                <div className='d-flex justify-content-center'>
                 
-               {[2, 3, 5, 12].includes(product.id) && (
+               {[2, 3, 5, 12].includes(Number(product.id)) && product.marked_price && (
     <div className='text-decoration-line-through text-muted font-weight400 font-size14 me-2'>
       {currency}{product.marked_price}
     </div>

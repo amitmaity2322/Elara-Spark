@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { CartContext } from './context/CartProvider';
 import CartProduct from './CartProduct';
 import { useNavigate } from 'react-router-dom';
+import EmpCart from '/images/em-cart.png'
 
 
 
@@ -35,8 +36,10 @@ function Cart() {
          <div className='container'>
             {cart.length === 0 ? (
             <div className="text-center py-5">
-              <h4 className="font-family1 font-size26 font-weight500 color-main">Your cart is empty</h4>
-            </div>
+               <img src={EmpCart} alt='Empty' className='empty_cart pb-4'/>
+               
+              <h4 className=" font-size34 font-weight400 color-Blackgray">Your Cart is Empty!</h4>
+             </div>
             ):(
             <div className='row'>
            <div className='col-lg-8 overflow-x-scroll1'>

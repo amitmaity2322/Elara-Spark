@@ -7,16 +7,22 @@ import search from '/images/search.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { CartContext } from './context/CartProvider';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { WishlistContext } from './context/WishlistProvider';
 
 
 const Navbar = () => {
   const [mobileNav, setmobileNav] = useState(false);
-
+  //const [activeLink, setActiveLink] = useState('home');
   const toggleMenu = () =>{
-    setmobileNav(!mobileNav);
+    setmobileNav(prev => !prev);
     //console.log('Menu open')
+  }
+
+  const handleNavClick =()=>{
+    if(window.innerWidth < 992){
+      toggleMenu();
+    }
   }
 
   const {cart} =useContext(CartContext);
@@ -59,7 +65,7 @@ const handleSearchSubmit = (e) => {
 
     {/* Navbar content */}
     <div className={`navbar-collapse side-nav ${mobileNav ? 'open' : ''} `} id="navbarSupportedContent">
-    <button className='close-btn' onClick={toggleMenu}>
+    <button className='close-btn' onClick={toggleMenu}> 
     <FontAwesomeIcon icon={faTimes} />
           </button>
       <div className="d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
@@ -73,12 +79,12 @@ const handleSearchSubmit = (e) => {
         <div className="d-flex gap-4">
           
           <ul className="navbar-nav mb-3 mb-lg-0">
-          <li className="nav-item"><a className="nav-link active" href="/">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="/shop">Shop</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+          <li className="nav-item"><NavLink className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} to="/" onClick={handleNavClick}>Home</NavLink></li>
+            <li className="nav-item"><NavLink className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} to="/shop" onClick={handleNavClick}>Shop</NavLink></li>
+            <li className="nav-item"><a className="nav-link" href="">Portfolio</a></li>
+            <li className="nav-item"><a className="nav-link" href="">About Us</a></li>
+            <li className="nav-item"><a className="nav-link" href="">Blog</a></li>
+            <li className="nav-item"><a className="nav-link" href="">Contact Us</a></li>
           </ul>
         </div>
 
@@ -111,6 +117,12 @@ const handleSearchSubmit = (e) => {
 {showSearch && (
   <div className="search-popup">
     <form onSubmit={handleSearchSubmit} className="search-popup-content">
+      <div className='close-icon'>
+      <button type="button" onClick={() => setShowSearch(false)}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
+      </div>
+      <div className='d-flex justify-content-between'>
       <input
         type="text"
         placeholder="Search products..."
@@ -119,9 +131,9 @@ const handleSearchSubmit = (e) => {
         autoFocus
       />
       <button type="submit">Search</button>
-      <button type="button" onClick={() => setShowSearch(false)}>
-        <FontAwesomeIcon icon={faTimes} />
-      </button>
+      </div>
+      
+      
     </form>
   </div>
 )}

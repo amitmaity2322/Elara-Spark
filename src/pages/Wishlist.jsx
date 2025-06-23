@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import { useNavigate } from 'react-router-dom';
 import star from '/images/star.svg';
+import wishlist1 from '/images/wishlist.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import {  WishlistContext } from '../pages/context/WishlistProvider';
@@ -38,7 +39,8 @@ function Wishlist() {
              <div className='row'>
              {wishlist.length === 0 ? (
               <div className='text-center py-5'>
-                <p className='font-family1 font-size26 font-weight500 color-main'>Your wishlist is empty.</p>
+                <img src={wishlist1} alt='Wishlist' className='empty_wishlist pb-4'/>
+                <p className='font-size34 font-weight400 color-Blackgray'>Your Wishlist is Empty.</p>
               </div>
             
           ) : (

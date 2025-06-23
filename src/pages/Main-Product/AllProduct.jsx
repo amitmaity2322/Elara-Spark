@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MainProduct from './MainProduct';
 import rightarrow from '/images/right-arrow.svg';
 
-function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailability, searchQuery}) {
+function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailability, searchQuery, setFilteredCount}) {
      const[products, setproduct]=useState([]);
      const[featured, setfeatured]=useState([]);
      const [currentPage, setCurrentPage] = useState(1);
@@ -25,6 +25,8 @@ function AllProduct({columnClass, priceRange, selectedTypes, selectedAvailabilit
              }, []);
 
              const allProducts = [...products, ...featured];
+
+             //console.log(allProducts);
              
              // Filter by priceRange (if provided)
              function escapeRegex(str) {
@@ -81,7 +83,9 @@ const matchesSearch =
               //console.log("priceRange", priceRange);
               //console.log("allProducts", allProducts);
               console.log("Selected Types:", selectedTypes);
-console.log("Filtered products:", filtered);
+useEffect(()=>{
+  setFilteredCount(filtered.length);
+}, [filtered.length, setFilteredCount]);
 
   return (
     <>

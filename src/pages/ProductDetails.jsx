@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import star from '/images/star.svg';
 import { parsePath, useNavigate, useParams } from 'react-router-dom';
 import productData from '../../db.json';
@@ -15,7 +15,14 @@ function ProductDetails({product}) {
   //console.log("singleproduct", singleproduct);
  //console.log(products2) 
 
- const[mainImg, setmainImg]=useState(singleproduct?.image_url);
+ const allProducts = [...products1, ...products2];
+const similarProducts = allProducts.filter(
+  (p) => p.product_type === singleproduct?.product_type && p.handle !== singleproduct?.handle
+);
+
+
+ //const[mainImg, setmainImg]=useState(singleproduct?.image_url);
+ const [mainImg, setmainImg] = useState(singleproduct.imageArray[0].url);
 
  const { dispatch } = useContext(CartContext);
 
@@ -47,7 +54,13 @@ const handleBuyitNow = () => {
   }, 100);
 };
 
+useEffect(() => {
+  if (singleproduct?.imageArray?.length > 0) {
+    setmainImg(singleproduct.imageArray[0].url);
+  }
+}, [singleproduct]);
 
+const currency = import.meta.env.VITE_CURRENCY_SYMBOL;
 
   return (
     <>
@@ -150,8 +163,49 @@ const handleBuyitNow = () => {
            
         </div>
 
+        
+
         </div>
       </div>
+      <div className='container'>
+  <h3 className='font-size28 font-weight500 mb-4 font-family1'>You May Also Like</h3>
+  <div className='row'>
+    {similarProducts.slice(0, 4).map((product) => (
+      <div className="col-md-3 col-6 text-center main-product" key={product.id}>
+        <div className='product-box position-relative' onClick={() => navigate(`/product/${product.handle}`)} style={{ cursor: 'pointer' }}>
+        {[2, 3, 5, 12].includes(Number(product.id)) && product.mark_discount && (
+  <div className='position-absolute rounded-circle mark_discount'>
+    {product.mark_discount}
+  </div>
+)}
+          <div className='bgcolor-gray'>
+            <img src={product.image_url} alt={product.product_name} />
+          </div>
+          <h4 className='color-grayBlack font-size14 font-weight400 pt-3'>
+            {product.product_name}
+          </h4>
+          <div>
+            {[...Array(5)].map((_, i) => (
+              <span key={i}><img src={star} alt="star" /></span>
+            ))}
+          </div>
+          <div className='d-flex justify-content-center'>
+          {[2, 3, 5, 12].includes(Number(product.id)) && product.marked_price && (
+    <div className='text-decoration-line-through text-muted font-weight400 font-size14 me-2'>
+      {currency}{product.marked_price}
+    </div>
+  )}
+            <p className='color-main color-green font-weight600 font-size14'>
+              ${product.mrp_price}
+            </p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+      
     </>
   )
 }
