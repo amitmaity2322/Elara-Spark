@@ -6,7 +6,7 @@ function MainProductList() {
     
 
     useEffect(()=>{
-       fetch('http://localhost:3001/products')
+       fetch('https://elaraspark.onrender.com/products')
        .then((res)=> res.json())
        .then((data)=> setproduct(data))
        .catch((err) => console.error('Error fetching products:', err));

@@ -4,7 +4,7 @@ import MainProduct from './MainProduct';
 function FeaturedProducts() {
     const[featured, setfeatured]=useState([]);
     useEffect(()=>{
-            fetch('http://localhost:3001/featured_products')
+            fetch('https://elaraspark.onrender.com/featured_products')
             .then((res)=> res.json())
             .then((data)=> setfeatured(data))
             .catch((err) => console.error('Error fetching products:', err));
