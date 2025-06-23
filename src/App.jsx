@@ -9,7 +9,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Thankyou from "./pages/Thankyou";
-import Wishlist from "./pages/wishlist";
+import Wishlist from "./pages/Wishlist";
 
 
 function Layout() {
