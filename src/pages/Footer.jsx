@@ -84,10 +84,10 @@ const Footer = () => {
                </div>
                <div>
                <ul className='social-icon p-0 d-flex justify-content-center mt-3 mt-md-0'>
-                   <li><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-                   <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                   <li><a href="#"><FontAwesomeIcon icon={faYoutube} /></a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                   <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                   <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                   <li><a href="https://www.youtube.com/"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                    <li><a href="https://www.twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
                    
                     
                 </ul>
