@@ -295,7 +295,7 @@ a.nav-link {
     font-weight: var(--font-weight500);
 }
 .ftco-section {
-    padding: 3.5% 0;
+    padding: 3.188rem 0;
 }
 .category-absolute{
     bottom: 0;
@@ -324,7 +324,7 @@ a.nav-link {
 }
 
 .product-section, .featured-section{
-    padding: 5.5% 0;
+    padding: 5rem 0;
 }
 
 .test-img{
@@ -656,7 +656,7 @@ a.nav-link{
     padding: 3.875rem 0 3.1rem 0;
 }
 .section-blog{
-    padding: 5.5% 0;
+    padding: 5rem 0;
 }
 .product-box{
     transition: all 0.3s ease-in-out;
@@ -1529,6 +1529,9 @@ padding: 8px 6px;
 .ftco-section .ftco-top {
     margin-bottom: 15px;
 }
+.product-section, .featured-section, .ftco-section, .section-blog{
+    padding: 3rem 0;
+}
 
 }
 
@@ -1613,6 +1616,9 @@ padding: 8px 6px;
         margin: 4px 3%;
         width: 94%;
     } 
+    .ftco-section{
+        padding: 2rem 0;
+    }
 }
 
 @media only screen and (max-width:600px){
